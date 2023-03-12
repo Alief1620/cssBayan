@@ -40,6 +40,12 @@ hr {
   height: fit-content;
 }
 
+@media (hover: hover) {
+  .container:hover * {
+    cursor: pointer;
+  }
+}
+
 .title {
   font-family: "Dancing Script", cursive;
   font-weight: 700;
@@ -60,6 +66,10 @@ hr {
   color: rgb(141, 69, 177);
 }
 
+.container:hover .label {
+  color: rgb(0, 0, 0);
+}
+
 input[type="radio"]:checked ~ .label {
   margin-bottom: 1.25rem;
   color: rgb(0, 0, 0);
@@ -72,7 +82,12 @@ input[type="radio"]:checked ~ .label {
 }
 
 .icon {
+  opacity: 0;
   transition: all 0.3s ease;
+}
+
+.container:hover .icon {
+  opacity: 1;
 }
 
 input[type="radio"]:not(:checked) + .label .icon {
