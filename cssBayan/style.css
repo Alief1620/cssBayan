@@ -122,3 +122,11 @@ input[type="radio"]:checked ~ .image {
   width: 15.3rem;
   opacity: 1;
 }
+
+.item:active .label {
+  color: rgb(141, 69, 177);
+}
+
+.item:active .image {
+  opacity: 0.7;
+}
