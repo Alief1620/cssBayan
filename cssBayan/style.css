@@ -66,6 +66,10 @@ hr {
   color: rgb(141, 69, 177);
 }
 
+.item:hover .label {
+  margin-bottom: 1.25rem;
+}
+
 .container:hover .label {
   color: rgb(0, 0, 0);
 }
@@ -90,6 +94,10 @@ input[type="radio"]:checked ~ .label {
   opacity: 1;
 }
 
+.item:hover input[type="radio"]:not(:checked) ~ .label .icon {
+  rotate: 0deg;
+}
+
 input[type="radio"]:not(:checked) + .label .icon {
   rotate: 45deg;
 }
@@ -101,6 +109,12 @@ input[type="radio"]:not(:checked) + .label .icon {
   opacity: 0;
   transition: all 0.3s ease;
   user-select: none;
+}
+
+.item:hover .image {
+  display: block;
+  width: 15.3rem;
+  opacity: 1;
 }
 
 input[type="radio"]:checked ~ .image {
