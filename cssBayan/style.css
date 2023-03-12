@@ -123,6 +123,51 @@ input[type="radio"]:checked ~ .image {
   opacity: 1;
 }
 
+@media (min-width: 820px) {
+  .container {
+    max-width: 40rem;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .label {
+    font-size: 1.25rem;
+  }
+  .item:hover .image {
+    width: 20rem;
+  }
+  input[type="radio"]:checked ~ .image {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 60rem;
+  }
+  .item {
+    padding: 2rem 0;
+  }
+  .title {
+    font-size: 4rem;
+  }
+  .label {
+    font-size: 2rem;
+  }
+  .item:hover .image {
+    width: 30rem;
+  }
+  input[type="radio"]:checked ~ .image {
+    width: 30rem;
+  }
+  .item:hover .label {
+    margin-bottom: 2rem;
+  }
+  input[type="radio"]:checked ~ .label {
+    margin-bottom: 2rem;
+  }
+}
+
 .item:active .label {
   color: rgb(141, 69, 177);
 }
